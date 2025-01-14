@@ -7,7 +7,7 @@ function filterArray(numbers, value) {
       newArray.push(number);
     }
   }
-
+  
   return newArray;
 }
 
