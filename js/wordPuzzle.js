@@ -4,7 +4,7 @@ const kelimeler = ["adana", "ankara", "antalya", "bursa", "bolu", "bilecik", "ç
 // oyun değişkenleri
 let secilenKelime = "";
 let tahminEdilenHarfler = [];
-let kalanHak = 5;
+let kalanHak = 10;
 let kullanılanHarfler = [];
 let oyunaDevam = true;
 
@@ -12,11 +12,11 @@ let oyunaDevam = true;
 function startGame() {
     // secilenKelime = kelimeSec();
     tahminEdilenHarfler = new Array(secilenKelime.length).fill("_");
-    kalanHak = 5;
+    kalanHak = 10;
     kullanılanHarfler = [];
     oyunaDevam = true;
     // oyuna başlama mesajı
-    alert("Kelime Bulma Oyununa Hoşgeldiniz! \n\nOyunun kuralları şu şekildedir: \n Rastgele seçilen bir kelimeyi bulmaya çalışacaksınız. Her yanlış tahminde kalan hakkınız azalacak. Toplam 5 hakkınız var. Tahmin ettiğiniz harfleri tekrar girmeyiniz. İyi eğlenceler!");
+    alert("Kelime Bulma Oyununa Hoşgeldiniz! \nOyunun kuralları şu şekildedir: \n Rastgele seçilen bir kelimeyi bulmaya çalışacaksınız. \n Her yanlış tahminde kalan hakkınız azalacak. Toplam 5 hakkınız var. \nTahmin ettiğiniz harfleri tekrar girmeyiniz.\n İyi eğlenceler!");
    // Oyunun kuralları şu şekildedir: Rastgele seçilen bir kelimeyi bulmaya çalışacaksınız.Her yanlış tahminde kalan hakkınız azalacak.Toplam 5 hakkınız var.Tahmin ettiğiniz harfleri tekrar girmeyiniz.İyi eğlenceler!");
     
    
@@ -120,7 +120,7 @@ function startGame() {
        
    
     }
-      alert(`Kaybettiniz! :(`);
+      alert(`Kaybettiniz! :( \n Kelime: ${secilenKelime}`);
      if (confirm("Tekrar oynamak ister misiniz?")) {
         startGame();
     }
